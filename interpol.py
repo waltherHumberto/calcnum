@@ -15,14 +15,14 @@ class Ui(QtWidgets.QMainWindow):
 
     def escolhe_metodo(self):
         if(self.comboBox.currentText()== "Newton"):
-            self.Calcular.disconnect()
-            self.Calcular.clicked.connect(lambda: self.escolhe_metodo()) # Inicia a conexão do botão inicia com o evento 
+            self.calbut.disconnect()
+            self.calbut.clicked.connect(lambda: self.escolhe_metodo()) # Inicia a conexão do botão inicia com o evento 
         if(self.comboBox.currentText()== "Lagrange"):
-            self.Calcular.disconnect()
-            self.Calcular.clicked.connect(lambda: self.escolhe_metodo()) # Inicia a conexão do botão inicia com o evento 
+            self.calbut.disconnect()
+            self.calbut.clicked.connect(lambda: self.escolhe_metodo()) # Inicia a conexão do botão inicia com o evento 
         if(self.comboBox.currentText()== "Gregory-Newton"):
-            self.Calcular.disconnect()
-            self.Calcular.clicked.connect(lambda: self.escolhe_metodo()) # Inicia a conexão do botão inicia com o evento 
+            self.calbut.disconnect()
+            self.calbut.clicked.connect(lambda: self.escolhe_metodo()) # Inicia a conexão do botão inicia com o evento 
 
     def sair():
         quit()
