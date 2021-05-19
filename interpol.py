@@ -11,11 +11,19 @@ class Ui(QtWidgets.QMainWindow):
         uic.loadUi('calc.ui', self)
         self.show()
         self.resposta_edit.clear()
-        self.calbut.clicked.connect(lambda: self.gera_interpolacao()) # Inicia a conexão do botão inicia com o evento 
+        self.comboBox.currentIndexChanged.connect(lambda: self.escolhe_metodo()) # Inicia a conexão do botão inicia com o evento 
 
-    def gera_interpolacao(self):
-        self.resposta_edit.append("L(x)=−12x2+52x−1 ")
-        
+    def escolhe_metodo(self):
+        if(self.comboBox.currentText()== "Newton"):
+            self.Calcular.disconnect()
+            self.Calcular.clicked.connect(lambda: self.escolhe_metodo()) # Inicia a conexão do botão inicia com o evento 
+        if(self.comboBox.currentText()== "Lagrange"):
+            self.Calcular.disconnect()
+            self.Calcular.clicked.connect(lambda: self.escolhe_metodo()) # Inicia a conexão do botão inicia com o evento 
+        if(self.comboBox.currentText()== "Gregory-Newton"):
+            self.Calcular.disconnect()
+            self.Calcular.clicked.connect(lambda: self.escolhe_metodo()) # Inicia a conexão do botão inicia com o evento 
+
     def sair():
         quit()
     
