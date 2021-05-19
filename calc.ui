@@ -23,11 +23,11 @@
       <height>531</height>
      </rect>
     </property>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="calbut">
      <property name="geometry">
       <rect>
-       <x>244</x>
-       <y>110</y>
+       <x>242</x>
+       <y>200</y>
        <width>111</width>
        <height>23</height>
       </rect>
@@ -348,21 +348,40 @@
       <string>Y</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_23">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
+    <widget class="QTextBrowser" name="resposta_edit">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>160</y>
+       <x>232</x>
+       <y>240</y>
        <width>131</width>
        <height>41</height>
       </rect>
      </property>
-     <property name="text">
-      <string>      L(x)=−12x2+52x−1 </string>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>160</y>
+       <width>101</width>
+       <height>22</height>
+      </rect>
      </property>
+     <item>
+      <property name="text">
+       <string>Newton</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Lagrange</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Gregory-Newton</string>
+      </property>
+     </item>
     </widget>
    </widget>
   </widget>
